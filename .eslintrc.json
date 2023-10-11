@@ -1,24 +1,23 @@
 {
-    "env": {
-      "browser": true,
-      "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    },
-    "plugins": ["react", "prettier"],
-  
-    "rules": {
-      "prettier/prettier": ["error", { "endOfLine": "auto" }],
-      "semi": 0,
-      "comma-dangle": 0,
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "react/prop-types": "off"
-    }
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "semi": 0,
+    "comma-dangle": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": "off"
   }
-  
+}
